@@ -8,24 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		62B6E0F52213626B00183A3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B6E0F42213626B00183A3A /* AppDelegate.m */; };
-		62B6E0F82213626B00183A3A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B6E0F72213626B00183A3A /* ViewController.m */; };
 		62B6E0FB2213626B00183A3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62B6E0F92213626B00183A3A /* Main.storyboard */; };
 		62B6E0FD2213626B00183A3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62B6E0FC2213626B00183A3A /* Assets.xcassets */; };
 		62B6E1002213626B00183A3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62B6E0FE2213626B00183A3A /* LaunchScreen.storyboard */; };
 		62B6E1032213626B00183A3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B6E1022213626B00183A3A /* main.m */; };
+		62B6E10F221365D400183A3A /* RLGCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B6E10E221365D400183A3A /* RLGCard.m */; };
+		62B6E113221371A500183A3A /* RLGCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B6E112221371A500183A3A /* RLGCardController.m */; };
+		62B6E1702214C55700183A3A /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B6E16F2214C55700183A3A /* CardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		62B6E0F02213626B00183A3A /* deckOfOneCardOBJC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = deckOfOneCardOBJC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62B6E0F32213626B00183A3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		62B6E0F42213626B00183A3A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		62B6E0F62213626B00183A3A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		62B6E0F72213626B00183A3A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		62B6E0FA2213626B00183A3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		62B6E0FC2213626B00183A3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62B6E0FF2213626B00183A3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		62B6E1012213626B00183A3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62B6E1022213626B00183A3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		62B6E10D221365D400183A3A /* RLGCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLGCard.h; sourceTree = "<group>"; };
+		62B6E10E221365D400183A3A /* RLGCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLGCard.m; sourceTree = "<group>"; };
+		62B6E111221371A500183A3A /* RLGCardController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLGCardController.h; sourceTree = "<group>"; };
+		62B6E112221371A500183A3A /* RLGCardController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLGCardController.m; sourceTree = "<group>"; };
+		62B6E16E2214C55700183A3A /* deckOfOneCardOBJC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "deckOfOneCardOBJC-Bridging-Header.h"; sourceTree = "<group>"; };
+		62B6E16F2214C55700183A3A /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +64,45 @@
 		62B6E0F22213626B00183A3A /* deckOfOneCardOBJC */ = {
 			isa = PBXGroup;
 			children = (
+				62B6E1102213718900183A3A /* Models */,
+				62B6E1092213627800183A3A /* Resources */,
+				62B6E0F92213626B00183A3A /* Main.storyboard */,
+				62B6E1142213798100183A3A /* Controllers */,
+			);
+			path = deckOfOneCardOBJC;
+			sourceTree = "<group>";
+		};
+		62B6E1092213627800183A3A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				62B6E0F32213626B00183A3A /* AppDelegate.h */,
 				62B6E0F42213626B00183A3A /* AppDelegate.m */,
-				62B6E0F62213626B00183A3A /* ViewController.h */,
-				62B6E0F72213626B00183A3A /* ViewController.m */,
-				62B6E0F92213626B00183A3A /* Main.storyboard */,
 				62B6E0FC2213626B00183A3A /* Assets.xcassets */,
 				62B6E0FE2213626B00183A3A /* LaunchScreen.storyboard */,
 				62B6E1012213626B00183A3A /* Info.plist */,
 				62B6E1022213626B00183A3A /* main.m */,
 			);
-			path = deckOfOneCardOBJC;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		62B6E1102213718900183A3A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				62B6E10D221365D400183A3A /* RLGCard.h */,
+				62B6E10E221365D400183A3A /* RLGCard.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		62B6E1142213798100183A3A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				62B6E111221371A500183A3A /* RLGCardController.h */,
+				62B6E112221371A500183A3A /* RLGCardController.m */,
+				62B6E16F2214C55700183A3A /* CardViewController.swift */,
+				62B6E16E2214C55700183A3A /* deckOfOneCardOBJC-Bridging-Header.h */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,11 +131,13 @@
 		62B6E0E82213626B00183A3A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = RLG;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "RYAN GREENBURG";
 				TargetAttributes = {
 					62B6E0EF2213626B00183A3A = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -141,9 +177,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62B6E0F82213626B00183A3A /* ViewController.m in Sources */,
 				62B6E1032213626B00183A3A /* main.m in Sources */,
+				62B6E113221371A500183A3A /* RLGCardController.m in Sources */,
 				62B6E0F52213626B00183A3A /* AppDelegate.m in Sources */,
+				62B6E1702214C55700183A3A /* CardViewController.swift in Sources */,
+				62B6E10F221365D400183A3A /* RLGCard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,14 +323,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = deckOfOneCardOBJC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/deckOfOneCardOBJC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = A.deckOfOneCardOBJC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "deckOfOneCardOBJC/Controllers/deckOfOneCardOBJC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -301,14 +343,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = deckOfOneCardOBJC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/deckOfOneCardOBJC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = A.deckOfOneCardOBJC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "deckOfOneCardOBJC/Controllers/deckOfOneCardOBJC-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
